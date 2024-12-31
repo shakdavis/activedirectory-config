@@ -37,7 +37,7 @@ This tutorial is a walkthrough of the implementation of on-premises Active Direc
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I began by creating a resource group labeled Active-Directory-Lab in Azure. Within this resource group is where 2 virtual machines were created and deployed in order to configure my Active Directory - one virtual machine acting as the Domain Controller or "DC-1" and the other acting as our Active User or "Client-1". After checking and making sure both vms were created in the same region/location 
+I began by creating a resource group labeled Active-Directory-Lab in Azure. Within this resource group is where 2 virtual machines were created and deployed in order to configure my Active Directory - one virtual machine acting as the Domain Controller or "DC-1" and the other acting as our Active User or "Client-1". After checking and making sure both vms were created in the same region/location, I then created and deployed my virtual machines.
 </p>
 <br />
 
@@ -45,7 +45,7 @@ I began by creating a resource group labeled Active-Directory-Lab in Azure. With
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to grant the fronten
+In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up 
 </p>
 <br />
 
