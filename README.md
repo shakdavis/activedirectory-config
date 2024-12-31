@@ -30,17 +30,21 @@ This tutorial is a step-by-step guide on the implementation of Active Directory 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="![Uploading Screenshot 2024-12-31 173907.png…]()"/>
 </p>
 <p>
-Step 1. Begin by creating a resource group labeled "Active-Directory-Lab" in Microsoft Azure.  
-  
-  Within this resource group is where 2 virtual machines were created and deployed in order to configure my Active Directory - one virtual machine acting as the Domain Controller or "DC-1" and the other acting as our Active User or "Client-1". After checking and making sure both vms were created in the same region/location, I then created and deployed my virtual machines.
+Step 1. Create a resource group labeled "Active-Directory-Lab" in Microsoft Azure. For this lab, you could deploy your resource group in the EAST US 2 region.
+Step 2. Within the resource group, create and deploy 2 virtual machines - one virtual machine acting as the Domain Controller or "DC-1" and operating under Windows Server 2022 and the other acting as our Active User or "Client-1" and operating under Windows 10 (21H2). After verifying both vms are going to be deployed and stored in the same region (ex. EAST US 2), you then create and deploy your virtual machines.
+
+*IMPORTANT* Be sure to set the Domain Controller's NIC Private IP address to "STATIC". Since Client-1 will be using DC-1 as the DNS Server, this prevents DC-1's private IP address from changing. This can be done by going to DC-1's network settings in Azure > selecting the Network Interface Configuration with a computer chip icon > select "ipconfig" hyperlink > change Private IP address setting to "Static" </p>
+
+<p>
+Step 3. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Stebs"/>
 </p>
 <p>
 In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up 
