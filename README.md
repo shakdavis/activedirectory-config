@@ -38,16 +38,14 @@ Step 2. Within the resource group, create and deploy 2 virtual machines - one vi
 
 *IMPORTANT* Be sure to set the Domain Controller's NIC Private IP address to "STATIC". Since Client-1 will be using DC-1 as the DNS Server, this prevents DC-1's private IP address from changing. This can be done by going to DC-1's network settings in Azure > selecting the Network Interface Configuration with a computer chip icon > select "ipconfig" hyperlink > change Private IP address setting to "Static" </p>
 
-<p>
-Step 3. 
-</p>
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Stebs"/>
 </p>
+
 <p>
-In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up 
+Step 3. In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up 
 </p>
 <br />
 
