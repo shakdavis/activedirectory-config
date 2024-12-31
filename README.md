@@ -4,13 +4,9 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial is a walkthrough of the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+<h1>Active Directory: Configuration and Deployment within the Cloud (Azure)</h1>
+This tutorial is a step-by-step guide on the implementation of Active Directory within Azure Virtual Machines.<br />
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -37,7 +33,9 @@ This tutorial is a walkthrough of the implementation of on-premises Active Direc
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I began by creating a resource group labeled Active-Directory-Lab in Azure. Within this resource group is where 2 virtual machines were created and deployed in order to configure my Active Directory - one virtual machine acting as the Domain Controller or "DC-1" and the other acting as our Active User or "Client-1". After checking and making sure both vms were created in the same region/location, I then created and deployed my virtual machines.
+Step 1. Begin by creating a resource group labeled "Active-Directory-Lab" in Microsoft Azure.  
+  
+  Within this resource group is where 2 virtual machines were created and deployed in order to configure my Active Directory - one virtual machine acting as the Domain Controller or "DC-1" and the other acting as our Active User or "Client-1". After checking and making sure both vms were created in the same region/location, I then created and deployed my virtual machines.
 </p>
 <br />
 
