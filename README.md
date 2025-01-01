@@ -33,9 +33,9 @@ This tutorial is a step-by-step guide on the implementation of Active Directory 
 <img src="![Uploading Screenshot 2024-12-31 173907.png…]()"/>
 </p>
 <p>
-Step 1. Create a resource group labeled "Active-Directory-Lab" in Microsoft Azure. For this lab, you could deploy your resource group in the EAST US 2 region.
+Step 1. Create a resource group labeled "Active-Directory-Lab" in Microsoft Azure. For this tutorial, you could deploy your resource group in the EAST US 2 region.
   
-Step 2. Within the resource group, create and deploy 2 virtual machines - one virtual machine acting as the Domain Controller or "DC-1" and operating under Windows Server 2022 and the other acting as our Active User or "Client-1" and operating under Windows 10 (21H2). After verifying both vms are going to be deployed and stored in the same region (ex. EAST US 2), you then create and deploy your virtual machines.
+Step 2. Within the resource group, create and deploy 2 virtual machines - one virtual machine acting as the Domain Controller or "DC-1" and operating under Windows Server 2022 and the other acting as your Active User or "Client-1" and operating under Windows 10 (21H2). After verifying both vms are going to be deployed and stored in the same region (ex. EAST US 2), you then create and deploy your virtual machines.
 
 Step 3. Be sure to set the Domain Controller's NIC Private IP address to "STATIC". Since Client-1 will be using DC-1 as the DNS Server, this prevents DC-1's private IP address from changing. This can be done by going to DC-1's network settings in Azure > selecting the Network Interface Configuration with a computer chip icon > Settings tab > under IP Configurations tab select "ipconfig" hyperlink > change Private IP address setting to "Static" > be sure to save progress.
 
@@ -49,9 +49,9 @@ Step 4. To ensure both vms are operating along the same newtowrk, set Client-1 D
 </p>
 
 <p>
-Step 5. In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up
+Step 5. You're now going to run the Windows Remote Desktop and access your Domain User (DC-1) account using DC-1's public IP address. Use your credentials created during the making of the DC-1 vm to login. Once inside, you will now access the Server Manager which you could find using your start menu. Go to "Add Roles and features" > for the Server Selection = DC-1 > under the Server Roles tab, check Active Directory Domain Services and its features for installation.
 
-Step 6. In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up
+Step 6. Once Active Directory is installed, there should be a pop-up in the top right corner to promote DC-1 as the actual domain controller. Clicking this will then bring up the Active Directory Domain Services Configuration Wizard. In the Deployment Configuration window, select "Add a New Forest" and the root domain name will be *mydomain.com* > for the Directory Services Restore Mode, for both password textboxes use *Password1* for now > proceed with "next" as nothing else changes and *install* at the end to install the forest. Your end result should inform you that the server was successfully configured as a domain controlle. You'll also receive a prompt about the network automactically restarting to complete to Active Directory installation. 
 </p>
 <br />
 
@@ -59,6 +59,7 @@ Step 6. In this image, Windows Remote Desktop service is being utilized. In util
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 7. After about a few minutes, try logging back into your DC-1 network.
+Step 8. 
 </p>
 <br />
