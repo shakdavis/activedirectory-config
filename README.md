@@ -52,9 +52,9 @@ Step 4.5 - Implementing powershell to make sure the active user is on DC-1's net
 </p>
 
 <p>
-Step 5. You're now going to run the Windows Remote Desktop and access your Domain User (DC-1) account using DC-1's public IP address. Use your credentials created during the making of the DC-1 vm to login. Once inside, you will now access the Server Manager which you could find using your start menu. Go to "Add Roles and features" > for the Server Selection = DC-1 > under the Server Roles tab, check Active Directory Domain Services and its features for installation.
+Step 5. You're now going to run the Windows Remote Desktop and access your Domain User (DC-1) account using DC-1's public IP address. Use your credentials created during the making of the DC-1 vm to login. Once inside, you will now access the Server Manager which you could find using your start menu. Go to "Add Roles and features" > for the Server Selection = DC-1 > under the Server Roles tab, check Active Directory Domain Services and its features for installation and *install*.
 
-Step 6. Once Active Directory is installed, there should be a pop-up in the top right corner to promote DC-1 as the actual domain controller. Clicking this will then bring up the *Active Directory Domain Services Configuration Wizard*. In the Deployment Configuration tab, select "Add a New Forest" and the root domain name will be *mydomain.com* > for the Directory Services Restore Mode, for both password textboxes use *Password1* for now > proceed with "next" as nothing else changes and *install* at the end to install the forest. Your end result should inform you that the server was successfully configured as a domain controlle. You'll also receive a prompt about the network automactically restarting to complete to Active Directory installation. 
+Step 6. Once Active Directory is installed, there should be a pop-up in the top right corner to promote DC-1 as the actual domain controller. Clicking this will then bring up the *Active Directory Domain Services Configuration Wizard*. In the Deployment Configuration tab, select "Add a New Forest" and the root domain name will be *mydomain.com*. For the Directory Services Restore Mode, for both password textboxes be sure to remember whatever you decide will be your password (ie.*Password1*) > proceed with "next" as nothing else changes and *install* at the end to install the forest. Your end result should inform you that the server was successfully configured as a domain controller. You'll also receive a prompt about the network automactically restarting to complete to Active Directory installation. 
 </p>
 <br />
 
@@ -62,7 +62,7 @@ Step 6. Once Active Directory is installed, there should be a pop-up in the top 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Step 7. After about a few minutes try logging back into your DC-1 network which should now be your active domain user. To give a user domain user access, you'd enter into the textbox *mydomain
-Step 8. 
+Step 7. After about a few minutes try logging back into your DC-1 network which should now be your active domain user. To give an user domain admin user access, you'd enter in the username textbox *mydomain.com\labuser*. Also enter the password used to create the DC-1 vm. 
+Step 8.
 </p>
 <br />
