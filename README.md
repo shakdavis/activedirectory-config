@@ -34,9 +34,13 @@ This tutorial is a step-by-step guide on the implementation of Active Directory 
 </p>
 <p>
 Step 1. Create a resource group labeled "Active-Directory-Lab" in Microsoft Azure. For this lab, you could deploy your resource group in the EAST US 2 region.
+  
 Step 2. Within the resource group, create and deploy 2 virtual machines - one virtual machine acting as the Domain Controller or "DC-1" and operating under Windows Server 2022 and the other acting as our Active User or "Client-1" and operating under Windows 10 (21H2). After verifying both vms are going to be deployed and stored in the same region (ex. EAST US 2), you then create and deploy your virtual machines.
 
-*IMPORTANT* Be sure to set the Domain Controller's NIC Private IP address to "STATIC". Since Client-1 will be using DC-1 as the DNS Server, this prevents DC-1's private IP address from changing. This can be done by going to DC-1's network settings in Azure > selecting the Network Interface Configuration with a computer chip icon > select "ipconfig" hyperlink > change Private IP address setting to "Static" </p>
+Step 3. Be sure to set the Domain Controller's NIC Private IP address to "STATIC". Since Client-1 will be using DC-1 as the DNS Server, this prevents DC-1's private IP address from changing. This can be done by going to DC-1's network settings in Azure > selecting the Network Interface Configuration with a computer chip icon > Settings tab > under IP Configurations tab select "ipconfig" hyperlink > change Private IP address setting to "Static" > be sure to save progress.
+
+Step 4. To ensure both vms are operating along the same newtowrk, set Client-1 DNS settings to DC-1 private ip address.This can be done by going to DC-1's network settings in Azure > selecting the Network Interface Configuration with a computer chip icon > select Settings tab > under DNS servers tab select "Custom" and paste DC-1 private IP address inside textbox > be sure to save progress.
+</p>
 
 <br />
 
@@ -45,7 +49,9 @@ Step 2. Within the resource group, create and deploy 2 virtual machines - one vi
 </p>
 
 <p>
-Step 3. In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up 
+Step 5. In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up
+
+Step 6. In this image, Windows Remote Desktop service is being utilized. In utilizing this service I used this to gain access to both vms in order to see how the backend user (being DC-1) was able to allow and/or deny the frontend user (Client-1) access to certain programs and services over the network. I then matched up
 </p>
 <br />
 
