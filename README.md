@@ -45,6 +45,8 @@ Step 4. To ensure both vms are operating along the same newtowrk, set Client-1 D
 <br />
 
 <p>
+Step 4.5 - Implementing powershell to make sure the active user is on DC-1's networkprivate IP address
+<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Stebs"/>
 </p>
 
@@ -59,7 +61,7 @@ Step 6. Once Active Directory is installed, there should be a pop-up in the top 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Step 7. After about a few minutes, try logging back into your DC-1 network.
+Step 7. After about a few minutes try logging back into your DC-1 network which should now be your active domain user.
 Step 8. 
 </p>
 <br />
