@@ -14,6 +14,7 @@ This tutorial is a step-by-step guide on the implementation of Active Directory 
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
+- Server Manager
 
 <h2>Operating Systems Used </h2>
 
@@ -61,7 +62,7 @@ Step 6. Once Active Directory is installed, there should be a pop-up in the top 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Step 7. After about a few minutes try logging back into your DC-1 network which should now be your active domain user.
+Step 7. After about a few minutes try logging back into your DC-1 network which should now be your active domain user. To give a user domain user access, you'd enter into the textbox *mydomain
 Step 8. 
 </p>
 <br />
